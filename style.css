@@ -81,6 +81,11 @@ h1 {
     line-height: 1.2;
 }
 
+h2 {
+    font-family: 'Poiret One', Open Sans;
+    font-weight: 400;
+}
+
 h3 {
     font-family: 'Poiret One', Open sans;
     color: #FFFFFF;
@@ -89,6 +94,13 @@ h3 {
     font-size: 100%;
     margin-bottom: 8%;
     line-height: 2;
+}
+.legal,
+.angle,
+.pose,
+.staff {
+    font-family: 'Raleway';
+    font-size: 50%;
 }
 
 .btn,
@@ -140,9 +152,9 @@ h3 {
 }
 
 .column1 {
-    width: 60%;
+    width: 55%;
     margin-left: 100px;
-    padding-right: 100px;
+    padding-right: 90px;
     font-size: 100%;
     font-weight: 300;
     font-family: 'Poiret One', Open Sans;
@@ -151,8 +163,7 @@ h3 {
     float: left;
 }
 .column2 {
-    margin: 50px;
-    width: 100%
+    margin: 30px;
 }
 
 .services {
@@ -165,28 +176,72 @@ h3 {
     font-family: 'Poiret One', Roboto;
 }
 
-.aa,
-.ab,
-.ac,
-.ad {
-    width: 150px;
-    height: 150px;
-    background-color: #000;
-    margin: 30px;
-    float: left;
-    border-radius: 100%;
+.bg-man {
+    width: 350px;
+    height: 400px;
+    margin: 40px;
 }
 
-.myhobbies-content {
+.practice {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.real-estate {
+    width: 17.96875rem;
+    height: 15rem;
+    background-color: #c2d1e3;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 65px;
+    text-align: center;
+}
+.criminal {
+    width: 17.96875rem;
+    height: 15rem;
+    background-color: #6684a8;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.personal {
+    width: 17.96875rem;
+    height: 15rem;
+    background-color: #425871;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.employment {
+    width: 17.96875rem;
+    height: 15rem;
+    background-color: #2c4156;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.fas {
+    font-size: 3rem;
+    color: #dfe8ed;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ourteam {
+    color: #FFFFFF;
+    background: #2a3747;
     margin: 0 auto;
-    font-size: 100%;
-    font-weight: 300;
-    font-family: 'Poiret One', Open Sans;
-    text-align: justify;
-    width: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    line-height: 1.75;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Poiret One', Roboto;
 }
 
 .contactme-content {
