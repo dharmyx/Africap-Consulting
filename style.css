@@ -1256,6 +1256,15 @@ input[type=text] {
     .carousel {
         padding: 50vh 32vh;
     }
+    .carousel__snapper {
+        animation-name: tonext, snap;
+        animation-timing-function: ease;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    .carousel__slide:last-child .carousel__snapper {
+        animation-name: tostart, snap;
+    }
     header.nav-items {
         display: none;
     }
@@ -1574,6 +1583,15 @@ input[type=text] {
 
     .carousel {
         padding: 50vh 28vh;
+    }
+    .carousel__snapper {
+        animation-name: tonext, snap;
+        animation-timing-function: ease;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    .carousel__slide:last-child .carousel__snapper {
+        animation-name: tostart, snap;
     }
 
     .content {
