@@ -14,52 +14,108 @@
     </head>
 
     <body>
-        <section class="intro">
-            <div class="inner">
-                <div class="menu-wrap">
-                    <input type="checkbox" class="toggler">
-                    <div class="hamburger">
-                        <div></div>
-                    </div>
-                    <div class="menu">
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
                         <div>
-                            <div>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#services">Services</a></li>
-                                    <li><a href="#team">Team</a></li>
-                                    <li><a href="#contact">Contact</a></li>
-                                </ul>
-                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="logo1"><a href="#"></a></div>
-                <header class="nav-items">
-                    <div class="logo"><a href="#"></a></div>
-                    <nav class="nav-lists">
-                        <a class="btn-home" href="#">Home</a>
-                        <a class="btn-about" href="#about">About</a>
-                        <a class="btn-services" href="#services">Services</a>
-                        <a class="btn-team" href="#team">Team</a>
-                        <a class="btn-contact" href="#contact">Contact</a>
-                    </nav>
-                
-                </header>
-                <div class="content">
-                    <div class="content-intro">
-                    <h1>Committed to Helping
-                        <br>Our Clients Succeed.</h1>
-                    <h3>Challenging traditional investment & financial planning
-                        <br>on with holistic and flat-fee management, curated for you.</h3>
+            </div>
+            <div class="logo1"><a href="#"></a></div>
+            <header class="nav-items">
+                <div class="logo"><a href="#"></a></div>
+                <nav class="nav-lists">
+                    <a class="btn-home" href="#">Home</a>
+                    <a class="btn-about" href="#about">About</a>
+                    <a class="btn-services" href="#services">Services</a>
+                    <a class="btn-team" href="#team">Team</a>
+                    <a class="btn-contact" href="#contact">Contact</a>
+                </nav>
+            </header>
+
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1"
+                  tabindex="0"
+                  class="carousel__slide">
+                  <div class="content">
+                      <div class="content-intro">
+                          <h1>Committed to Helping
+                              <br>Our Clients Succeed.</h1>
+                          <h3>Challenging traditional investment & financial planning
+                              <br>on with holistic and flat-fee management, curated for you.</h3>
+                      </div>
+                      <div class="buttons">
+                          <a class="btn" href="#contact">Consultation</a>
+                          <a class="btn1" href="#about">Learn More</a>
+                      </div>
+                  </div>
+                <div class="carousel__snapper"></div>
+              </li>
+              <li id="carousel__slide2"
+                  tabindex="0"
+                  class="carousel__slide">
+                  <div class="content">
+                    <div class="content-intro-black">
+                    <h1>We Help When
+                        <br>You Need Us.</h1>
+                    <h3 class="black">Providing you with expert Legal Advice.</h3>
                     </div>
                     <div class="buttons">
                     <a class="btn" href="#contact">Consultation</a>
                     <a class="btn1" href="#about">Learn More</a>
                 </div>
                 </div>
-            </div>
+                <div class="carousel__snapper"></div>
+              </li>
+              <li id="carousel__slide3"
+                  tabindex="0"
+                  class="carousel__slide">
+                  <div class="content">
+                    <div class="content-intro">
+                    <h1>Need Legal Assistance? 
+                        <br>Get Free Consultation</h1>
+                    <h3>Speak to our professional lawyers<br>We are just a Click away.</h3>
+                    </div>
+                    <div class="buttons">
+                    <a class="btn" href="#contact">Consultation</a>
+                    <a class="btn1" href="#about">Learn More</a>
+                </div>
+                </div>
+                <div class="carousel__snapper"></div>
+              </li>
+            </ol>
+            <!--<aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide1"
+                     class="carousel__navigation-button"></a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide3"
+                     class="carousel__navigation-button"></a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide4"
+                     class="carousel__navigation-button"></a>
+                </li>
+              </ol>
+            </aside>-->
+          </section>
+        <section class="intro">
+            
         </section>
 
         <section class="about-contact-area">
@@ -144,7 +200,9 @@
                         <h1 class="contactus"><a id="contact">Contact Us</a></h1>
                         <div class="underline"></div>
                         <div class="contact-content">
-                            <div class="contact-info"></div>
+
+                            <div id="contact-info"></div>
+
                             <div class="form-box">
                                 <div><p class="getfree">Get Free Consultation</p>
                                     <p class="form-label">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, nam. Deserunt porro dolorum facere minus?</p>
@@ -216,6 +274,14 @@
                 </div>
             </footer>
         </section>
+
+        <script src="script.js"></script>
+        <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdnnAFHUparO0Y8adJJH9Fwm9j6YLKrpY&callback=initMap&libraries=&v=weekly">
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   
+      
     </body>
 
 </html>

@@ -1,5 +1,5 @@
 // Slideshow
-var slideIndex = 1;
+/*var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -28,4 +28,15 @@ function showDivs(n) {
     }
     x[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " w3-white";
+    
+}
+*/
+
+
+let map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById("contact-info"), {
+    center: { lat: 6.647959, lng: 3.326811 },
+    zoom: 8
+  });
 }
