@@ -1253,6 +1253,9 @@ input[type=text] {
         text-transform: capitalize;
     }*/
 
+    .carousel {
+        padding: 50vh 32vh;
+    }
     header.nav-items {
         display: none;
     }
@@ -1316,7 +1319,7 @@ input[type=text] {
 
     .column1 {
         width: 85%;
-        height: fit-content;
+        height: auto;
         margin: 0px auto;
         grid-area: x;
     }
@@ -1327,8 +1330,9 @@ input[type=text] {
     }
 
     .lead1 {
-        font-size: .9rem;
+        font-size: 1rem;
         text-align: justify;
+        line-height: 2;
     }
 
     .column2 {
@@ -1344,6 +1348,7 @@ input[type=text] {
 
     .service-head {
         width: 75%;
+        font-size: 1.1rem;
     }
 
     div.services-container {
@@ -1420,7 +1425,7 @@ input[type=text] {
 
     .team-head {
         width: 75%;
-        font-size: 20px;
+        font-size: 1.1rem;
         margin: auto;
     }
 
@@ -1450,6 +1455,10 @@ input[type=text] {
     div h4 {
         font-size: 1.1rem;
     }
+    div p {
+        font-size: .8rem;
+        line-height: 1.5;
+    }
 
     .team1,
     .team2,
@@ -1463,19 +1472,25 @@ input[type=text] {
 
     .contact-content {
         grid-template-areas: "girl girl";
+        padding: 50px;
     }
 
-    .contact-info {
+    #contact-info {
         display: none;
     }
 
     .form-box {
         grid-area: girl;
         text-align: center;
+        width: 70%;
+        margin: auto;
     }
 
     .getfree {
         margin: 20px 0;
+    }
+    .form-label {
+        font-size: 1.1rem;
     }
 
     .qlinkz {
@@ -1486,7 +1501,9 @@ input[type=text] {
         width: 85%;
         margin: 40px auto;
     }
-
+    .ql, .tel {
+        font-size: .8rem;
+    }
     .qlink1 {
         grid-area: par;
         padding: 10px;
@@ -1498,13 +1515,13 @@ input[type=text] {
     }
 
     .qlink3 {
-        grid-area: pin;
         display: none;
     }
 
     .qlink4 {
         grid-area: pan;
-        text-align: center;
+        display: inline-flex;
+        justify-content: center;
         padding: 10px;
     }
 
@@ -1526,6 +1543,18 @@ input[type=text] {
         font-size: 1.2rem;
         padding-right: 9px;
     }
+    div>img{
+        width: 85px;
+        height: 70px;
+        margin: 10px 50px;
+    }
+    .qlinkx,
+    .textwidget {
+        padding: 10px 0;
+    }
+    .widget {
+        margin: 10px auto;
+    }
 
 }
 
@@ -1544,12 +1573,7 @@ input[type=text] {
     }*/
 
     .carousel {
-        position: relative;
-        width: 50%;
-        height: 50%;
-        padding: 50vh 36vh;
-        filter: drop-shadow(0 0 10px #0003);
-        perspective: -100px;
+        padding: 50vh 28vh;
     }
 
     .content {
@@ -1633,7 +1657,9 @@ input[type=text] {
     .getfree {
         font-size: 1.2rem;
     }
-
+    #contact-info {
+        display: none;
+    }
     .form-label {
         font-size: 1rem;
     }
@@ -1648,7 +1674,11 @@ input[type=text] {
         font-size: 1rem;
         color: #2a3747;
     }
-
+    div>img{
+        width: 75px;
+        height: 60px;
+        margin: 15px;
+    }
     .textwidget,
     .ql,
     .tel {
@@ -1665,5 +1695,40 @@ input[type=text] {
         color: rgb(88, 85, 90);
         font-size: .85rem;
         padding-right: 3px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .carousel {
+        padding: 50vh 28vh;
+    }
+    #contact-info {
+        display: none;
+    }
+    .contact-content {
+        width: auto;
+        grid-template-columns: auto;
+        grid-template-areas: "girl";
+        place-items: center center;
+        padding: 50px;
+    }
+    .widget {
+        margin: 30px auto;
+    }
+    .qlink1,
+    .qlink2,
+    .qlink4 {
+        border: none;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    .qlink3 {
+        display: none;
+    }
+    div>img{
+        width: 55px;
+        height: 40px;
+        margin: 15px;
     }
 }
