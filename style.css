@@ -1705,17 +1705,12 @@ input[type=text] {
     }
     .carousel__snapper {
         animation-name: tonext, snap;
-        animation-timing-function: ease-in;
+        animation-timing-function: ease;
         animation-duration: 5s;
         animation-iteration-count: infinite;
     }
-
     .carousel__slide:last-child .carousel__snapper {
         animation-name: tostart, snap;
-    }
-
-    .carousel__snapper {
-        animation-name: none;
     }
     #contact-info {
         display: none;
