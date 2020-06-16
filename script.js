@@ -32,11 +32,26 @@ function showDivs(n) {
 }
 */
 
-
 let map;
 function initMap() {
   map = new google.maps.Map(document.getElementById("contact-info"), {
-    center: { lat: 6.647959, lng: 3.326811 },
-    zoom: 8
+    center: { lat: 6.646454, lng: 3.326705 },
+    zoom: 16
   });
 }
+
+/*
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://geocodify.p.rapidapi.com/?q=4047",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "geocodify.p.rapidapi.com",
+		"x-rapidapi-key": "9fbf695ebamsh8881b17ad4d1b91p17bdaejsn5b73482bee2f"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});*/
