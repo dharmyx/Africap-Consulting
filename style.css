@@ -902,6 +902,7 @@ input[type=text] {
     font-family: inherit;
     border-radius: 5px;
     border: 0 solid #e2e8f0;
+    outline: none;
 }
 
 #message-input {
@@ -910,6 +911,7 @@ input[type=text] {
     box-sizing: border-box;
     border: 0 solid #e2e8f0;
     border-radius: 6px 6px 0px 6px;
+    outline: none;
 }
 
 .send {
@@ -922,6 +924,7 @@ input[type=text] {
     border: #f8304e;
     color: #ffffff;
     cursor: pointer;
+    outline: none;
 }
 
 .send:hover {
