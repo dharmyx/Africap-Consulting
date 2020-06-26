@@ -1699,6 +1699,9 @@ div.africaplogo {
     .service-head {
         width: 85%;
     }
+    .serConte {
+        background-size: 42rem;
+    }
 
     .team-head {
         width: 85%;
@@ -1797,7 +1800,7 @@ div.africaplogo {
     .textwidget,
     .ql,
     .tel {
-        font-size: .75rem;
+        font-size: .85rem;
         color: #2a3747;
     }
     .fa-phone,
