@@ -41,7 +41,43 @@ li {
 
 /* COURESELL SECTION */
 
+@keyframes tonext {
+    
+    75% {
+        transform: translateX(0%);
+    }
+    95% {
+        transform: translateX(100%);
+    }
 
+    98% {
+        transform: translateX(100%);
+    }
+
+    99% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes tostart {
+    75% {
+        transform: translateX(0%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    98% {
+        transform: translateX(-300%);
+    }
+
+    99% {
+        transform: translateX(0%);
+    }
+}
+
+/*
 @keyframes tonext {
     50% {
         left: 50%;
@@ -79,7 +115,7 @@ li {
     99% {
         left: 0;
     }
-}
+}*/
 
 @keyframes snap {
     96% {
@@ -98,6 +134,7 @@ li {
         scroll-snap-align: center;
     }
 }
+
 
 
 * {
@@ -164,11 +201,17 @@ li {
 .carousel__slide:nth-child(2) {
     background-color: orange;
     background-image: url(img/law-bg11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .carousel__slide:nth-child(3) {
     background-color: orchid;
     background-image: url(img/wallpaperbg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*
@@ -194,7 +237,7 @@ li {
 @media (hover: hover) {
     .carousel__snapper {
         animation-name: tonext, snap;
-        animation-timing-function: ease-in;
+        animation-timing-function: all;
         animation-duration: 5s;
         animation-iteration-count: infinite;
     }
