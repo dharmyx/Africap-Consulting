@@ -996,20 +996,38 @@ input[type=text] {
 }
 
 /* QUICK LINKS SECTION */
+section.qlinks {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
 .qlinkz {
     width: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
         "par pen pin pan";
-    column-gap: 20px;
+    column-gap: 5px;
     margin: 40px 100px;
 }
+
 
 .qlink1 {
     grid-area: par;
     padding: 20px;
     border: 1px solid #dbaf79;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+div.africaplogo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(img/africap.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .qlinkx {
@@ -1017,14 +1035,19 @@ input[type=text] {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
 }
-
+.textwidget {
+    padding-top: 20px;
+    color: #2a3747;
+}
 .social-icon {
-    padding: 20px 0;
+    padding-top: 50px;
 }
 
 .qlink2 {
     grid-area: pen;
     border: 1px solid #dbaf79;
+    border-top: none;
+    border-bottom: none;
     text-align: center;
     color: #2a3747;
     font-family: 'Jost', sans-serif;
@@ -1048,10 +1071,13 @@ input[type=text] {
 .qlink3 {
     grid-area: pin;
     border: 1px solid #dbaf79;
+    border-top: none;
+    border-bottom: none;
     text-align: center;
     font-size: 18px;
-    padding: 30px;
+    padding: 40px 20px;
     font-family: 'Jost', sans-serif;
+    color: #2a3747;
 }
 
 .finder {
@@ -1066,10 +1092,14 @@ input[type=text] {
 .qlink4 {
     grid-area: pan;
     border: 1px solid #dbaf79;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
     text-align: center;
     font-size: 18px;
-    padding: 35px;
+    padding: 40px 20px;
     font-family: 'Jost', sans-serif;
+    color: #2a3747;
 }
 
 .tel {
@@ -1088,7 +1118,14 @@ input[type=text] {
     font-size: 1.7rem;
     padding-right: 9px;
 }
-
+.fa-phone,
+.fa-envelope,
+.fa-globe-africa {
+    font-size: 1.5rem;
+    color: #58555a;
+    padding-right: 15px;
+    margin: auto;
+}
 .facebook:hover,
 .twitter:hover,
 .instagram:hover,
@@ -1373,7 +1410,7 @@ input[type=text] {
     }
 
     .column1 {
-        width: 85%;
+        width: 95%;
         height: auto;
         margin: 0px auto;
         grid-area: x;
@@ -1394,9 +1431,9 @@ input[type=text] {
         grid-area: y;
         width: auto;
         background-image: url(img/illus6.jpg);
-        background-size: 400px;
-        margin: 30px;
-        padding: 40% 5%;
+        background-size: 500px;
+        margin: 10px;
+        padding: 30%;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -1656,6 +1693,9 @@ input[type=text] {
         text-align: start;
     }
 
+    .column2 {
+        background-size: 289px;
+    }
     .service-head {
         width: 85%;
     }
@@ -1715,7 +1755,7 @@ input[type=text] {
     .success {
         font-size: 2rem;
         line-height: 1.2;
-        padding: 50px;
+        padding: 50px 20px;
     }
 
     .getfree {
@@ -1724,21 +1764,32 @@ input[type=text] {
     #contact-info {
         display: none;
     }
+    .contact-content {
+        width: auto;
+        grid-template-columns: auto;
+        grid-template-areas: "girl";
+        place-items: center center;
+        padding: 30px 10px;
+    }
     .form-label {
         font-size: 1rem;
     }
-
-    .qlinkz {
-        width: 95%;
+    .send {
+        padding: 5px 15px;
+        font-size: .9rem;
     }
-
+    .qlinkz {
+        width: auto;
+        column-gap: 0px;
+    }
+    
     .qlinkx,
     .link,
     .find {
         font-size: 1rem;
         color: #2a3747;
     }
-    div>img{
+    div.africaplogo{
         width: 75px;
         height: 60px;
         margin: 15px;
@@ -1749,7 +1800,14 @@ input[type=text] {
         font-size: .75rem;
         color: #2a3747;
     }
-
+    .fa-phone,
+    .fa-envelope,
+    .fa-globe-africa {
+        font-size: 1.1rem;
+        color: #58555a;
+        padding-right: 5px;
+        margin: auto;
+    }
     .facebook,
     .twitter,
     .instagram,
@@ -1784,24 +1842,142 @@ input[type=text] {
         grid-template-columns: auto;
         grid-template-areas: "girl";
         place-items: center center;
-        padding: 50px;
+        padding: 30px 10px;
+    }
+    .send {
+        padding: 5px 15px;
+        font-size: .85rem;
     }
     .widget {
         margin: 30px auto;
+    }
+    .qlinkz {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0;
+    }
+    .widget {
+        margin: 10px 30px;
+        text-align: center;
+        width: 85%;
+    }
+    .textwidget {
+        padding: 5px 0;
+    }
+    div.africaplogo{
+        width: 55px;
+        height: 40px;
+        margin: 10px auto;
+    }
+    .link {
+        padding: 10px 0;
+    }
+    .ql {
+        padding: 5px 0;
     }
     .qlink1,
     .qlink2,
     .qlink4 {
         border: none;
-        flex-wrap: wrap;
+        text-align: center;
         padding: 5px;
+    }
+    .qlink1 {
+        border-left: none;
     }
     .qlink3 {
         display: none;
     }
-    div>img{
-        width: 55px;
+    .qlink4 {
+        border-right: none;
+    }
+    .find {
+        padding: 10px 0;
+    }
+    .tel {
+        text-align: center;
+        padding: 5px 0;
+    }
+    .fa-phone,
+    .fa-envelope,
+    .fa-globe-africa {
+        padding-right: 15px;
+    }
+    .footer {
+        font-size: .6rem;
+    }
+   
+}
+
+@media only screen and (max-width: 320px) {
+
+
+    div.logo1 {
+        width: 40px;
         height: 40px;
-        margin: 15px;
+    }
+    .column1 {
+        width: 85%;
+    }
+    .whoweare,
+    .ourteam,
+    .services {
+        padding-top: 20px;
+    }
+    .underline {
+        margin-bottom: 10px;
+    }
+    div.about-container {
+        padding: 10px 5px;
+    }
+    .lead {
+        margin-top: 10px;
+        padding-top: 5px;
+        font-size: 1.5rem;
+    }
+    .lead1 {
+        font-size: .85rem;
+    }
+    .column2 {
+        background-size: 230px;
+    }
+    div.services-container {
+        width: 90%;
+        height: fit-content;
+        padding: 0 0 30px 0;
+        grid-gap: 10px;
+    }
+    div.real-estate h2,
+    div.criminal h2,
+    div.personal h2,
+    div.employment h2 {
+        font-size: .95rem;
+        padding: 10px 0;
+    }
+    div.real-estate p,
+    div.criminal p,
+    div.personal p,
+    div.employment p {
+        font-size: .75rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: .85rem;
+    }
+    .service-head,
+    .team-head,
+    .form-label {
+        font-size: .9rem;
+    }
+    .success {
+        font-size: 1.3rem;
+    }
+    .btn,
+    .btn1 {
+        font-size: .8rem;
+        padding: 5px 8px;
     }
 }
