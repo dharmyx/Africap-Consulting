@@ -40,6 +40,23 @@ li {
 
 
 /* COURESELL SECTION */
+@keyframes tostart {
+    75% {
+        transform: translateX(0%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    98% {
+        transform: translateX(-300%);
+    }
+
+    99% {
+        transform: translateX(0%);
+    }
+}
 
 @keyframes tonext {
     
@@ -59,23 +76,7 @@ li {
     }
 }
 
-@keyframes tostart {
-    75% {
-        transform: translateX(0%);
-    }
 
-    95% {
-        transform: translateX(-300%);
-    }
-
-    98% {
-        transform: translateX(-300%);
-    }
-
-    99% {
-        transform: translateX(0%);
-    }
-}
 
 /*
 @keyframes tonext {
@@ -214,6 +215,7 @@ li {
     background-repeat: no-repeat;
 }
 
+
 /*
 .carousel__slide:before {
   content: counter(item);
@@ -224,6 +226,31 @@ li {
   color: #fff;
   font-size: 2em;
 }*/
+
+
+.carousel__slide {
+    animation: slide-animation 1s infinite;
+}
+.carousel__slide {
+    animation-play-state: paused;
+}
+@keyframes slide-animation {
+    75% {
+        transform: translateX(0%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    98% {
+        transform: translateX(-300%);
+    }
+
+    99% {
+        transform: translateX(0%);
+    }
+}
 
 .carousel__snapper {
     position: absolute;
@@ -237,8 +264,8 @@ li {
 @media (hover: hover) {
     .carousel__snapper {
         animation-name: tonext, snap;
-        animation-timing-function: all;
-        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-duration: 8s;
         animation-iteration-count: infinite;
     }
 
@@ -246,10 +273,18 @@ li {
         animation-name: tostart, snap;
     }
 }
-
+/*
 @media (prefers-reduced-motion: reduce) {
     .carousel__snapper {
         animation-name: none;
+    }
+}
+*/
+@media (prefers-reduced-motion: no-preference) {
+    .carousel__snapper {
+        animation-duration: 8s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
     }
 }
 
